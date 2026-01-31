@@ -12,7 +12,7 @@ In your root `main.tf`:
 
 ```hcl
 module "vpc" {
-  source = "./modules/vpc"  # or "git::https://github.com/<org>/<repo>.git//modules/vpc?ref=vX.Y.Z"
+    source = "git::https://github.com/benayyad12/terraform-module-vpc.git//modules/vpc?ref=v1.0.0"
 
   cidr_block        = var.vpc_cidr_block
   subnet_cidr_block = var.subnet_cidr_block
